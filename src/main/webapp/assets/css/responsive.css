@@ -1,0 +1,324 @@
+@media (max-width: 1440px) {
+	 .g-search {
+      		width: 100%;
+      }     
+       .g-search-form {
+	    width: 380px !important;
+	    transform: translate3d(-330px, 0, 0) !important;
+	}
+	.sidebar {
+		    width: 350px;
+	}
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+.download-quot .download-quot-text {
+    display: none;
+}
+
+ html{
+      zoom: 90%;	
+      }
+      
+      .g-search {
+      		width: 112%;
+      }
+      
+      .g-search-form {
+	    width: 380px !important;
+	    transform: translate3d(-330px, 0, 0) !important;
+	}
+      
+}
+
+
+@media (max-width: 1496px) {
+
+ html{
+      zoom: 90%;	
+      }
+      
+}
+
+@media only screen and (max-width: 1024px) and  (orientation : landscape) {
+	 .g-search {
+      		width: 140%;
+      }
+       .g-search-form {
+		    width: 362px !important;
+		    transform: translate3d(-314px, 0, 0) !important;
+		}
+		.aside-menu {
+		    height: 430px !important;
+		}
+		.sidebar {
+		    width: 300px !important;
+		}
+		.ui-jqgrid-btable a {
+			margin-right: 3.35px !important;
+		}
+		.upload-download-stock {
+			    position: absolute;
+			    left: 66%;
+			    top: 5%;
+		}
+}
+
+@media screen and (max-device-width : 1440px) and  (orientation : landscape) {
+/* 		.aside-menu { */
+/* 		    height: 479px; */
+/* 		} */
+		.sidebar {
+		    width: 350px;
+		}
+}
+
+
+@media (max-width: 992px) {
+	 .g-search {
+      		width: 152%;
+      }
+}
+
+@media (min-width: 992px) {
+
+ html{
+      zoom: 93%;	
+      }
+      
+}
+
+
+
+.supplier_quoted{
+	    padding: 10px 0px 0px 0px !important;
+    margin: 0 auto;
+}
+.supplier_quoted .card-title {
+    border: 2px solid #F64E60 ;
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+        margin-top: -8px !important;
+}
+
+.supplier_quoted  span {
+    line-height: 22px;
+    margin-top: -10px !important;
+}
+
+
+.supplier_quoted .label {
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    background-color: #EBEDF3;
+    color: #3F4254;
+    font-weight: 600;
+    height: 36px;
+    width: 36px;
+    font-size: 14px;
+}
+
+
+.supplier_quoted .label.label-primary {
+    color: #FFFFFF;
+    background-color: #8950FC;
+}
+
+
+/* lg */
+
+@media (min-width: 1200px) {
+    /* Make Navigation Toggle on Desktop Hover */
+}
+
+
+/* md */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Make Navigation Toggle on Desktop Hover */
+}
+
+
+/* sm */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Make Navigation Toggle on Desktop Hover */
+}
+
+
+/* xs */
+
+@media (max-width: 767px) {}
+
+
+/* XS Portrait */
+
+@media (max-width: 480px) {}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width:320px) {
+/*     body:after { */
+/*         content: "320 to 480px"; */
+/*         background-color: hsla(90, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0 */
+/*     } */
+}
+
+@media only screen and (min-width:480px) {
+/*     body:after { */
+/*         content: "480 to 768px"; */
+/*         background-color: hsla(180, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0 */
+/*     } */
+    #inner-slider .hero-style-2,
+    .hero-style-3 {
+        height: calc(100vh - 167px);
+        min-height: inherit;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+/*     body:after { */
+/*         content: "1440px and up"; */
+/*         background-color: hsla(360, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0 */
+/*     } */
+    #inner-slider .hero-style-2,
+    .hero-style-3 {
+        height: calc(70vh - 167px);
+        min-height: inherit;
+    }
+}
+
+@media only screen and (min-width:1497px) {
+/*     body:after { */
+/*         content: "1080px and up"; */
+/*         background-color: hsla(360, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*           margin-left: 0; */
+/*             z-index: 999; */
+/*     } */
+    section.info h2 {
+        font-size: 27px;
+        font-weight: 600;
+        color: red !important;
+        padding-bottom: 0px;
+        line-height: 50px;
+        font-family: 'Century Gothic';
+    }
+    #inner-slider .hero-style-2,
+    .hero-style-3 {
+        height: calc(0vh - 167px) !important;
+        min-height: inherit;
+    }
+}
+
+@media only screen and (min-width:768px) {
+/*     body:after { */
+/*         content: "768 to 980px"; */
+/*         background-color: hsla(270, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0; */
+/*             z-index: 999; */
+/*     } */
+}
+
+@media only screen and (min-width:980px) {
+/*     body:after { */
+/*         content: "980 to 1024px"; */
+/*         background-color: hsla(300, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0; */
+/*             z-index: 999; */
+/*     } */
+}
+
+
+
+
+/* @media only screen and (min-width:1024px) { */
+/*     body:after { */
+/*         content: "1024 and up"; */
+/*         background-color: hsla(360, 60%, 40%, 0.7); */
+/*         height: 20px; */
+/*         padding-top: 0; */
+/*         margin-left: 0 */
+/*     } */
+/* } */
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    /* for 10 inches tablet screens */
+/*   body::before { */
+/*         content: "tablet to some desktop media query (769 > 1281) fired"; */
+/*         font-weight: bold; */
+/*         display: block; */
+/*         text-align: center; */
+/*         background: red; */
+/*         position: absolute; */
+/*         top: 0; */
+/*         left: 0; */
+/*         right: 0; */
+/*         z-index: 9999;        */
+      
+/*     }  */
+    
+   
+      
+}
+
+
+
+/********************************
+IPAD LANDSCAPE (1024x768)
+********************************/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/********************************
+IPAD PORTRAIT (768x1024)
+********************************/
+
+@media only screen and (max-width: 960px) {}
+
+
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+
+
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+
+@media only screen and (max-width: 450px) {}
+
