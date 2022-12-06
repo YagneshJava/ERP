@@ -40,7 +40,6 @@ $(document).ready(function() {
 });
 
 var vendorValidation = function() {
-	// Base elements
 	var wizardEl;
 	var formEl;
 	var wizardObj;
@@ -48,20 +47,17 @@ var vendorValidation = function() {
 
 	// Private functions
 	var initWizard = function() {
-		// Initialize form wizard
 		wizardObj = new KTWizard(wizardEl, {
-			startStep: 1, // initial active step number
-			clickableSteps: true // to make steps clickable this set value true and add data-wizard-clickable="true" in HTML for class="wizard" element
+			startStep: 1, 
+			clickableSteps: true 
 		});
 
-		// Validation before going to next page
 		wizardObj.on('change', function(wizard) {
 			if (wizard.getStep() > wizard.getNewStep()) {
-				return; // Skip if stepped back
+				return; 
 			}
 
-			// Validate form before change wizard step
-			var validator = validations[wizard.getStep() - 1]; // get validator for currnt step
+			var validator = validations[wizard.getStep() - 1]; 
 
 			if (validator) {
 				validator.validate().then(function(status) {
@@ -85,7 +81,7 @@ var vendorValidation = function() {
 				});
 			}
 
-			return false;  // Do not change wizard step, further action will be handled by he validator
+			return false;  
 		});
 
 		// Change event
@@ -95,7 +91,7 @@ var vendorValidation = function() {
 
 		// Submit event
 		wizardObj.on('submit', function(wizard) {
-			var validator = validations[wizard.getStep() - 1]; // get validator for currnt step
+			var validator = validations[wizard.getStep() - 1]; 
 
 			if (validator) {
 				validator.validate().then(function(status) {
@@ -175,8 +171,6 @@ var vendorValidation = function() {
 	}
 
 	var initValidation = function() {
-		// Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-		// Step 1
 		validations.push(FormValidation.formValidation(
 			formEl,
 			{
@@ -297,43 +291,6 @@ var vendorValidation = function() {
 			}
 		));
 
-		// Step 3
-		//		validations.push(FormValidation.formValidation(
-		//			formEl,
-		//			{
-		//				fields: {
-		//					bankName: {
-		//						validators: {
-		//							notEmpty: {
-		//								message: 'Bank name is required'
-		//							}
-		//						}
-		//					},
-		//					accountNumber: {
-		//						validators: {
-		//							notEmpty: {
-		//								message: 'Account number is required'
-		//							}
-		//						}
-		//					},
-		//					ifsc: {
-		//						validators: {
-		//							notEmpty: {
-		//								message: 'IFSC code is required'
-		//							}
-		//						}
-		//					}
-		//				},
-		//				plugins: {
-		//					trigger: new FormValidation.plugins.Trigger(),
-		//					// Bootstrap Framework Integration
-		//					bootstrap: new FormValidation.plugins.Bootstrap({
-		//						//eleInvalidClass: '',
-		//						eleValidClass: '',
-		//					})
-		//				}
-		//			}
-		//		));
 	}
 
 	return {

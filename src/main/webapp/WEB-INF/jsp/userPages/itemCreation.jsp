@@ -8,7 +8,7 @@
 		
 		<base href="">
 		<meta charset="utf-8" />
-		<title> Quotation </title>
+		<title> Item Creation </title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
 		<link rel="canonical" href="" />
@@ -312,7 +312,7 @@
 													  <i class="icon-lg la la-file-download"></i> 
 													  <span class="download-quot-text">Download Quotation Format</span>
 													</a>
-														<a data-toggle="modal" data-target="#NewTenderModal"  class="btn btn-primary font-weight-bolder font-size-sm"> New Quotation </a> 
+														<a data-toggle="modal" data-target="#newItemModal"  class="btn btn-primary font-weight-bolder font-size-sm"> New Item </a> 
 													</div>
 											</div>
 											<div class="card-body">
@@ -619,12 +619,12 @@
 							<!--end::Row-->
 
 							<!--end:: customer-verification.html -->
-			<div class="modal fade" data-backdrop="static" id="NewTenderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSizeXl" aria-hidden="true">
+			<div class="modal fade" data-backdrop="static" id="newItemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSizeXl" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                     	
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"> New Quotation </h5>
+                        <h5 class="modal-title" id="exampleModalLabel"> Item Creation </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i aria-hidden="true" class="ki ki-close"></i>
                         </button>
@@ -632,17 +632,15 @@
 
                     <div class="modal-body">
                     
-                        <form class="form" id="newQuotationForm" name ="newQuotationForm" enctype="multipart/form-data">
+                        <form class="form" id="newItemForm" name ="newItemForm">
                     		
                             <div class="row">
 
                                 <div class="col-xl-4">
                                     <!--begin::Input-->
                                     <div class="form-group">
-                                    <label for="">  Select Representative  </label>
-                                    <select class="form-control form-control-lg" id = "representative" name = "representative" autofocus>
-                                    <option value="">Select Rep</option>
-                                    </select>
+<!--                                     <label for="">  Description  </label> -->
+                                    <input type="text" class="form-control form-control-lg" id = "description" name = "description" placeholder="Item Description *" autofocus autocomplete="off">
                                 </div>
                                     <!--end::Input-->
                                 </div>
@@ -651,15 +649,7 @@
                                 <div class="col-xl-4">
                                     <!--begin::Input-->
                                     <div class="form-group">
-                                        <label>  Final Date  </label>
-                                        <div class="input-group date">
-                                            <input type="text" class="form-control date-picker" id="finalUploadDate" name = "finalUploadDate" placeholder="Select date" autocomplete="off"  onkeydown="return false"/>
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">
-                                                    <i class="la la-calendar-check-o"></i>
-                                                </span>
-                                            </div>
-                                        </div>
+                                            <input type="text" class="form-control form-control-lg" id="partNo" name = "partNo" placeholder="Part number *" autocomplete="off"  onkeydown="return false"/>
                                     </div>
                                     <!--end::Input-->
                                 </div>
@@ -667,54 +657,38 @@
                                 <div class="col-xl-4">
                                     <!--begin::Input-->
                                     <div class="form-group">
-                                        <label>  Delivery Date  </label>
-                                        <div class="input-group date">
-                                            <input type="text" class="form-control date-picker" id="deliveryDate" name = "deliveryDate" placeholder="Select date" autocomplete="off" onkeydown="return false"/>
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">
-                                                    <i class="la la-calendar-check-o"></i>
-                                                </span>
-                                            </div>
+                                            <input type="text" class="form-control form-control-lg" id="hsnCode" name = "hsnCode" placeholder="HSN Code *" autocomplete="off" onkeydown="return false"/>
                                         </div>
                                     </div>
                                     <!--end::Input-->
                                 </div>
 
-                            </div>
 
 
                             <div class="row">
                                 
-                                <div class="col-xl-4">
+                                <div class="col-xl-6">
                                     <!--begin::Input-->
-                                    <div class="form-group">
-                                        <label>Quotation File</label>
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input form-control-lg" id="lineFile" name = "lineFile" accept=".xlsx, .xls, .csv"/>
-                                            <label class="custom-file-label" for="customFile" id="lineFielLabel">   </label>
+                                       <div class="form-group">
+                                            <select class="form-control form-control-lg" id="gstTax" name = "gstTax" autocomplete="off" S>
+                                            <option value="">Select GST * </option>
+                                            </select>
                                         </div>
                                     </div>
                                     <!--end::Input-->
-                                </div>
-                                <div class="col-xl-4">
+                                <div class="col-xl-6">
                                     <!--begin::Input-->
-                                    <div class="form-group">
-                                    <label for="">  Select Location  </label>
-                                    <select class="form-control form-control-lg" id = "location" name = "addressId"  autocomplete="off">
+                                   <div class="form-group">
+                                    <select class="form-control form-control-lg" id = "unit" name = "unit"  autocomplete="off">
+                                    	<option value="">Select Unit * </option>
                                     </select>
                                 </div>
                                     <!--end::Input-->
                                 </div>
-
-													<div class="col-xl-4">
-														<div class="form-group">
-															<label for="exampleTextarea">Full Address</label>
-															<textarea class="form-control" disabled="disabled"
-																rows="1" id="fullAddress"></textarea>
-														</div>
-													</div>
+                                </div>
                                 
-                            </div>
+
+                                
 
                     <input type="hidden" id="customerId" name="customerId" value="${sessionScope.userCompanyDetails.getId()}">
                     <!--end::Form-->
@@ -884,7 +858,7 @@
 		<script src="${pageContext.request.contextPath}/assets/plugins/custom/datatables/datatables.bundle.js"></script>
 		<script src="${pageContext.request.contextPath}/assets/js/pages/crud/forms/widgets/bootstrap-daterangepicker.js"></script>
 		<script src="${pageContext.request.contextPath}/JS/tenderCommon.js"></script>
-		<script src="${pageContext.request.contextPath}/JS/customer/quotation.js?v=17721"></script>	
+		<script src="${pageContext.request.contextPath}/JS/userJS/itemCreation.js?v=17721"></script>	
 		
 		
 		<script type="text/javascript">

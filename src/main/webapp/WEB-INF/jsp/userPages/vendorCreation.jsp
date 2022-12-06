@@ -129,7 +129,7 @@
 												<h3 class="card-title align-items-start flex-column">
 													<span class="card-label font-weight-bolder text-dark">Vendor's</span>
 												</h3>
-												<div class="card-toolbar">
+												<div class="card-toolbar d-none">
 													<button type="reset" class="btn font-weight-bold btn-success mr-2" data-toggle="modal" data-target="#viewCustomerListModal">Show List</button>
 												</div>
 											</div>

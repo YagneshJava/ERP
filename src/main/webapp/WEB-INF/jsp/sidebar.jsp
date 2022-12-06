@@ -91,8 +91,8 @@
 										</a>
 									</li>
 
-									<li id="itemCreationLI"  class="menu-item" aria-haspopup="true">
-										<a href="itemCreation" class="menu-link">
+									<li id="itemCreationPageLI"  class="menu-item" aria-haspopup="true">
+										<a href="itemCreationPage" class="menu-link">
 											<i class="icon-xxl la fab la-dropbox mr-4"></i>
 											<span id = "pharmacyNotification" class="label label-sm label-light-danger label-rounded font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1 d-none" ></span>
 											<span class="menu-text"> Item Creation </span>
